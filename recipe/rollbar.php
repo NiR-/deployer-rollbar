@@ -25,7 +25,7 @@ env('rollbar_env', function () {
 });
 
 task('rollbar:notify', function () {
-    env('rollbar_local_username', runLocally('git config author.name')->toString());
+    env('rollbar_local_username', runLocally('git config user.name')->toString());
     env('rollbar_comment', run('cd {{current}} && git log -1 --pretty=format:"%s"')->toString());
 
     // @see https://rollbar.com/docs/deploys_other/
