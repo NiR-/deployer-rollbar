@@ -3,7 +3,6 @@
     "description": "Rollbar notifier for deployer",
     "type": "library",
     "require-dev": {
-        "deployer/deployer": "^3.0"
     },
     "license": "MIT",
     "authors": [
@@ -12,5 +11,7 @@
             "email": "albin.kerouanton@knplabs.com"
         }
     ],
-    "require": {}
+    "require": {
+        "deployer/deployer": "^3"
+    }
 }
