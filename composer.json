@@ -12,6 +12,6 @@
         }
     ],
     "require": {
-        "deployer/deployer": "^3"
+        "deployer/deployer": "^4"
     }
 }
