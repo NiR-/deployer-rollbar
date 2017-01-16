@@ -1,6 +1,14 @@
 <?php
 
-use function Deployer\{option, set, get, task, input, runLocally, run, writeln, isVerbose};
+use function Deployer\option;
+use function Deployer\set;
+use function Deployer\get;
+use function Deployer\task;
+use function Deployer\input;
+use function Deployer\runLocally;
+use function Deployer\run;
+use function Deployer\writeln;
+use function Deployer\isVerbose;
 use Symfony\Component\Console\Input\InputOption;
 
 option('rollbar-token', null, InputOption::VALUE_REQUIRED, 'Rollbar token to use (you can also use ROLLBAR_TOKEN env var).');
